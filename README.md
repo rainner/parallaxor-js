@@ -1,7 +1,7 @@
 [demo]: http://demo.sudofolio.com/parallaxor/example/
 [twitter]: http://twitter.com/raintek_
 [mit]: http://www.opensource.org/licenses/mit-license.php
-[gulp]: http://gulpjs.com/
+[node]: https://nodejs.org/en/
 
 # Parallaxor
 
@@ -71,7 +71,7 @@ Here is a list of options that are accepted by Parallaxor. Each layer will inher
 
 ## Build
 
-You will need to have NPM on your machine if you want to make changes to the Parallaxor source and build a new minified version. The packages needed are listed in the packages.json file and a gulpfile is already included, so just run these commands to fetch all the dependencies and build:
+You will need to have [NPM][node] on your machine if you want to make changes to the Parallaxor source and build a new minified version. The packages needed are listed in the packages.json file and a gulpfile is already included, so just run these commands to fetch all the dependencies and build:
 
 ```
 npm install
