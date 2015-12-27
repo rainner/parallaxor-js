@@ -1,4 +1,4 @@
-[demo]: http://rainner.github.com/parallaxor/
+[demo]: http://demo.sudofolio.com/parallaxor/example/
 [twitter]: http://twitter.com/raintek_
 [mit]: http://www.opensource.org/licenses/mit-license.php
 [gulp]: http://gulpjs.com/
@@ -68,8 +68,6 @@ Here is a list of options that are accepted by Parallaxor. Each layer will inher
 | `allowOverflow`  | `data-overflow`  | A `boolean` value `true/false` to allow/prevent layer elements to go past the container's bounding box (inside).  |
 | `invertX`        | `data-invertx`   | A `boolean` value `true/false` to invert the direction the layers move on the X axis.                             |
 | `invertY`        | `data-inverty`   | A `boolean` value `true/false` to invert the direction the layers move on the Y axis.                             |
-
-In addition to the behaviours described above, there are **two** methods `enable()` and `disable()` that *activate* and *deactivate* the **Parallax** instance respectively.
 
 ## Build
 
