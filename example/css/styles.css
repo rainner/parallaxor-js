@@ -1,0 +1,93 @@
+/**
+ * Document
+ */
+html, body
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body
+{
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+/**
+ * Parallax
+ */
+#parallax
+{
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+    margin: 0;
+    padding: 0;
+    background-color: #bcd;
+}
+#parallax > div
+{
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
+/**
+ * Tests container
+ */
+#tests
+{
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    z-index: 999;
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/**
+ * Options form
+ */
+#controls
+{
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    left: 10px;
+    bottom: 10px;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.1);
+}
+#controls > form
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 12px;
+    line-height: 14px;
+}
+#controls > form > fieldset
+{
+    margin: 0 0 10px 0;
+    padding: 5px;
+}
+#controls > form > fieldset > input
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}

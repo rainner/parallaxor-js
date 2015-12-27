@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Parallaxor JS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Creates mouse/motion parallax effect for children elements of a target container." />
+    <meta name="author" content="Rainner Lins | http://rainnerlins.com/" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+</head>
+<body>
+
+    <!-- parallax container/layers -->
+    <div id="parallax">
+        <div>
+            layer 1
+        </div>
+        <div>
+            layer 2
+        </div>
+        <div>
+            layer 3
+        </div>
+        <div>
+            layer 4
+        </div>
+        <div>
+            layer 5
+        </div>
+    </div>
+
+    <!-- options -->
+    <div id="controls">
+        <form id="control-form" autocomplete="off">
+            <fieldset>
+                <legend>Ease Speed:</legend>
+                <input type="range" name="speed" min="0.01" max="0.5" value="0.07" step="any" />
+            </fieldset>
+            <fieldset>
+                <legend>Depth Grow:</legend>
+                <input type="range" name="grow" min="10" max="100" value="50" step="any" />
+            </fieldset>
+            <fieldset>
+                <legend>Overflow Bounds:</legend>
+                <input type="checkbox" name="overflow" checked />
+            </fieldset>
+            <fieldset>
+                <legend>Invert X Axis:</legend>
+                <input type="checkbox" name="invertx" />
+            </fieldset>
+            <fieldset>
+                <legend>Invert Y Axis:</legend>
+                <input type="checkbox" name="inverty" />
+            </fieldset>
+            <div>
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Apply" />
+            </div>
+        </form>
+    </div>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="../build/parallaxor.min.js"></script>
+    <script type="text/javascript">
+    (function()
+    {
+        // new Parallaxor
+        var parallax = new Parallaxor( 'parallax', {} ),
+            controls = document.getElementById( 'control-form' ),
+            output   = document.getElementById( 'tests' );
+
+        // controls handler
+        controls.addEventListener( 'submit', function( e )
+        {
+            e && e.preventDefault();
+
+            var options = {
+                easingSpeed   : parseFloat( this.speed.value ),
+                layerGrowSize : parseInt( this.grow.value ),
+                allowOverflow : this.overflow.checked ? true : false,
+                invertX       : this.invertx.checked ? true : false,
+                invertY       : this.inverty.checked ? true : false,
+            };
+            console.log( 'options', options );
+            parallax.setOptions( options );
+            parallax.updateLayers();
+        });
+
+        // init parallax animation
+        parallax.enable();
+
+    })();
+    </script>
+
+</body>
+</html>

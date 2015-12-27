@@ -1,0 +1,43 @@
+{
+    "name": "parallaxor",
+    "description": "Creates mouse/motion parallax effect for children elements of a target container.",
+    "version": "1.0.1",
+    "license": "MIT",
+    "homepage": "http://rainner.github.io/parallaxor/",
+    "author": "Rainner Lins <rainnerlins@gmail.com>",
+    "directories": {
+        "example": "examples"
+    },
+    "scripts": {
+        "build": "gulp"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/rainner/parallaxor.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rainner/parallaxor/issues"
+    },
+    "keywords": [
+        "javascript",
+        "mobile",
+        "tablet",
+        "device",
+        "parallax",
+        "animation",
+        "mouse",
+        "motion"
+    ],
+    "devDependencies": {
+        "gulp": "^3.6.1",
+        "gulp-load-plugins": "^0.5.0",
+        "gulp-concat": "^2.2.0",
+        "gulp-clean": "^0.2.4",
+        "gulp-rename": "^1.2.0",
+        "gulp-uglify": "^0.2.1",
+        "gulp-header": "^1.2.2",
+        "gulp-wrapper": "^0.1.5",
+        "gulp-replace": "^0.5.4"
+    }
+}
+
